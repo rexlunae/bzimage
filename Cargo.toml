@@ -1,0 +1,18 @@
+[package]
+name = "bzimage"
+version = "0.1.0"
+edition = "2024"
+authors = ["Erica Stith <rexlunae@gmail.com>"]
+license = "MIT"
+description = "A create for handling bzimage format, such as Linux kernel images."
+repository = "https://github.com/rexlunae/bzimage"
+keywords = ["kernel", "linux", "compression"]
+documentation = "https://docs.rs/bzimage/"
+homepage = "https://github.com/rexlunae/bzimage"
+readme = "README.md"
+
+[dependencies]
+simple_endian = { version = "0.3", features = ["io"] }
+anyhow = "1.0"
+flate2 = "1.0"
+sha2 = "0.10"
